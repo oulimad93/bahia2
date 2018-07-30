@@ -12,13 +12,13 @@ refs:
     publish: true
   - image: /media/facebook.png
     publish: true
-  - image: /media/lic.png
+  - image: /media/microsoft.png
     publish: true
-  - image: /media/fagioli.png
+  - image: /media/samsung.png
     publish: true
-  - image: /media/isolux.png
+  - image: /media/dell.png
     publish: true
-  - image: /media/sonatrach.png
+  - image: /media/lenovo.png
     publish: true
 ---
 Nous travaillons avec plusieurs entreprises dispercés sur toute la surface du globe, ce qui fait de notre entreprise, un des leader du marché
