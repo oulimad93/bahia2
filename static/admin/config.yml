@@ -1,4 +1,4 @@
-display_url: "https://grp-platinum.netlify.com"
+display_url: ""
 
 backend:
   name: git-gateway
