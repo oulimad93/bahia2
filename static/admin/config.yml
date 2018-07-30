@@ -22,53 +22,8 @@ collections:
             fields:
               - { label: "Image", name: image, widget: image }
               - { label: "Texte (optionnel)", name: caption, widget: string }
-
-          - label: Services
-            name: services
-            widget: list
-            fields:
-              - { label: Nom du service, name: name, widget: string }
-              - { label: Image, name: image, widget: image, required: true }
-
-      - file: "content/presentation/_index.md"
-        label: "Présentation"
-        name: "presentation"
-        fields:
-          - label: "Introduction (Visible sur la page d'accueil)"
-            name: intro
-            widget: object
-            fields:
-              - { label: "Text d'introduction", name: text, widget: text }
-              - { label: Image, name: image, widget: image }
-          - { label: "Texte (Visible sur la page de présentation)", name: body, widget: markdown }
-
-      - file: "content/moyens/_index.md"
-        label: "Nos moyens"
-        name: "means"
-        fields:
-          - { label: "Texte en-tête", name: text, widget: text }
-          - { label: "Couverture en-tête", name: header_image, widget: image }
-
-          - label: Outils
-            name: tools
-            widget: object
-            fields:
-              - { label: Image, name: image, widget: image }
-              - { label: Entrées, name: items, widget: markdown }
-
-          - label: Matériels roulants
-            name: vehicles
-            widget: object
-            fields:
-              - { label: Image, name: image, widget: image }
-              - { label: Entrées, name: items, widget: markdown }
-
-          - label: Engins
-            name: machines
-            widget: object
-            fields:
-              - { label: Image, name: image, widget: image }
-              - { label: Entrées, name: items, widget: markdown }
+          - { label: "Image Principale", name: "intro_image", widget: "image" }
+          - { label: "Presentation", name: "presentation", widget: "text" }
 
       - file: "content/references/_index.md"
         label: "Références"
@@ -85,6 +40,23 @@ collections:
             fields:
               - { label: "Logo", name: image, widget: image }
               - { label: "Afficher", name: publish, widget: boolean }
+
+      - file: "content/references/_index.md"
+        label: "Services"
+        name: "services"
+        editor:
+          preview: false
+        fields:
+          - {label: "Titre", name: "heading", widget: "string", required: true}
+          - {label: "En-tete", name: "body", widget: "text", required: true}
+          - label: Services
+            name: services
+            singular_label: Service
+            widget: list
+            fields:
+              - { label: "Titre", name: "title", widget: "image" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
 
       - file: "content/contact/_index.md"
         label: "Contact"
