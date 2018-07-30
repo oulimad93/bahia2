@@ -41,7 +41,7 @@ collections:
               - { label: "Logo", name: image, widget: image }
               - { label: "Afficher", name: publish, widget: boolean }
 
-      - file: "content/references/_index.md"
+      - file: "content/services/_index.md"
         label: "Services"
         name: "services"
         editor:
