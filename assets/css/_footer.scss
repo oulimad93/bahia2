@@ -1,0 +1,16 @@
+footer {
+  color: #77838f;
+
+  a {
+    color: #77838f;
+    transition: .3s color;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .border-bottom {
+    border-color: rgba(white, .1) !important;
+  }
+}

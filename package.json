@@ -1,0 +1,28 @@
+{
+  "name": "grp-platinum",
+  "version": "0.0.0",
+  "description": "Hugo + NetlifyCMS = <3",
+  "author": "Imad Eddine Oulhaci <ox.ouss@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "parcel watch assets/css/main.scss assets/js/app.js --out-dir=static",
+    "compile": "parcel build assets/css/main.scss assets/js/app.js --out-dir=static"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.9.2",
+    "parcel-bundler": "^1.9.2",
+    "popper.js": "^1.14.3",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
+}

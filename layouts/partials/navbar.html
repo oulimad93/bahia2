@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-dark border-bottom">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="/img/logo_h_white.png" height="40" alt="Groupe Platinum Millenium">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto" style="font-weight: 500">
+        {{ $page := . }}
+        {{ range .Site.Menus.main }}
+        <li class="nav-item{{if or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) }} active{{end}}">
+          <a class="nav-link d-block py-2" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</nav>

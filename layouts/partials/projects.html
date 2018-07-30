@@ -1,0 +1,40 @@
+<div class="py-70 border-top">
+  <section class="container mb-3">
+    <div class="row align-items-center">
+      <div class="col-md-5">
+        <h2 class="section-title mb-3">Our projects</h2>
+        <p class="text-secondary intro-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sapiente, asperiores voluptate illum consequatur quas.</p>
+      </div>
+      <div class="col text-right">
+        <button class="btn btn-light shadow btn-arrow rounded-circle mr-2" id="project-prev">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </button>
+        <button class="btn btn-light shadow btn-arrow rounded-circle" id="project-next">
+          <i class="material-icons">keyboard_arrow_right</i>
+        </button>
+      </div>
+    </div>
+  </section>
+  <div class="container-fluid" id="projects-slider">
+    {{ range where .Site.Pages "Params.type" "project" }}
+      <div class="px-4 py-5">
+        <article class="card border-0 shadow">
+          <!-- {{ $name := .Params.image }}
+          {{ $imgs := .Site.GetPage "section" "images" }}
+          {{ $imgs := $imgs.Resources.Match $name }}
+          {{ range $index, $el := $imgs }}
+          {{ $resized := $el.Resize "300x" }}-->
+          <!-- {{ end }} -->
+          <div class="project-card-img">
+            <img src="{{ .Params.image }}" alt="" class="card-img-top">
+          </div>
+          <div class="card-body p-4">
+            <h4 class="card-title text-primary text-capitalize">{{ .Params.title }}</h4>
+            <p class="card-text text-secondary" >{{ .Params.description }}</p>
+            <a href="{{ .Permalink }}" class="text-primary">En savoir plus &raquo;</a>
+          </div>
+        </article>
+      </div>
+    {{ end }}
+  </div>
+</div>

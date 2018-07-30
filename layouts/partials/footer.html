@@ -1,0 +1,118 @@
+<!-- <figure class="w-100 m-0 p-0">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1924 72"
+    style="margin-bottom: -9px; enable-background:new 0 0 1924 72;" xml:space="preserve">
+    <path class="fill-dark" d="M962,0C507,1.5,0,72,0,72h962h962C1924,72,1417,1.5,962,0z" />
+  </svg>
+</figure> -->
+{{ with .Site.GetPage "section" "contact" }}
+<footer class="" id="contact">
+  <div class="container">
+    <div class="row justify-content-center py-5 border-bottom">
+      <div class="col-md-4 mb-4 mb-md-0">
+
+
+        </div>
+      </div>
+
+
+    <div class="row justify-content-between py-5 border-bottom">
+      <div class="col-md-3 mb-md-0 text-center text-md-left">
+        <img src="/img/logo_h_white.png" alt="" width="220" class="mb-5">
+        <p class="text-secondary text-sm">
+          &copy; 2018 {{ .Site.Title }}.
+          <br> Tous droits réservés.
+        </p>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0 d-none d-md-block">
+        <p class="text-white h5 mb-4">Coordonnees</p>
+
+        <div class="media mb-2">
+          <span class="text-white mr-3">
+            <i class="material-icons">phone</i>
+          </span>
+          <div class="media-body">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="tel:{{ .Params.principal_phone }}">{{ .Params.principal_phone }}</a>
+              </li>
+              {{ if .Params.phone_2}}
+              <li>
+                <a href="tel:{{ .Params.phone_2 }}">{{ .Params.phone_2 }}</a>
+              </li>
+              {{ end }}
+              {{ if .Params.phone_2}}
+              <li>
+                <a href="tel:{{ .Params.phone_3 }}">{{ .Params.phone_3 }}</a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      {{ if .Params.email_1}}
+        <div class="media mb-2">
+          <span class="text-white mr-3">
+            <i class="material-icons">email</i>
+          </span>
+          <div class="media-body">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="tel:{{ .Params.email_1 }}">{{ .Params.email_1 }}</a>
+              </li>
+              {{ if .Params.email_2}}
+              <li>
+                <a href="tel:{{ .Params.email_2 }}">{{ .Params.email_2 }}</a>
+              </li>
+              {{ end }}
+              {{ if .Params.email_2}}
+              <li>
+                <a href="tel:{{ .Params.email_3 }}">{{ .Params.email_3 }}</a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+
+      {{ end }}
+      {{ if .Params.address_1 }}
+        <div class="media mb-2">
+          <span class="text-white mr-3">
+            <i class="material-icons">place</i>
+          </span>
+          <div class="media-body">
+            <p class="mb-1">{{ .Params.address_1 }}</p>
+            {{ if .Params.address_2 }}
+            <p class="mb-1">{{ .Params.address_2 }}</p>
+            {{ end }}
+            {{ if .Params.address_3 }}
+            <p class="mb-1">{{ .Params.address_3 }}</p>
+            {{ end }}
+            <!-- <a href="https://www.google.com/maps/place/R%C3%A9sidence+les+Iris,+Rue+5+Juillet,+Bir+El+Djir/@35.7169824,-0.6021431,17z/data=!4m8!1m2!2m1!1sr%C3%A9sidence+les+iris+plaza!3m4!1s0xd7e629ff917a5fb:0xd8565a0c599b00f!8m2!3d35.7171386!4d-0.6010648"
+              target="_blank" rel="noreferrer noopener" class="text-sm">
+              Voir sur Google Maps &raquo;
+            </a> -->
+          </div>
+        </div>
+    {{ end }}
+      </div>
+      <div class="col-md-3">
+        <p class="text-white h5 mb-4">Restez connectés</p>
+        <a href="{{ .Params.facebook }}" rel="noreferrer noopener" class="badge badge-light badge-square">
+          {{ partial "icons/facebook" . }}
+        </a>
+        <a href="{{ .Params.linkedin }}" rel="noreferrer noopener" class="badge badge-light badge-square">
+          {{ partial "icons/linkedin" . }}
+        </a>
+        <a href="{{ .Params.twitter }}" rel="noreferrer noopener" class="badge badge-light badge-square">
+          {{ partial "icons/twitter" . }}
+        </a>
+      </div>
+    </div>
+    <small class="d-block p-3 m-0 text-center">
+      Site web réalisé par
+      <a href="http://linkomweb.com" target="_blank">LinkomWeb
+        <img src="/img/linkomweb.png" alt="" class="ml-1" height="17">
+      </a>
+    </small>
+  </div>
+</footer>
+{{ end }}

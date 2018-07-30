@@ -1,0 +1,8 @@
+node_modules/
+dist/
+public/
+.cache/
+static/css/*
+static/js/*
+resources/
+*.log

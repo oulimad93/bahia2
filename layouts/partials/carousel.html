@@ -1,0 +1,32 @@
+<div id="carousel" class="carousel slide carousel-fade carousel-homepage" data-ride="carousel">
+  <ol class="carousel-indicators">
+    {{ range $index, $item := .Params.carousel }}
+    <li data-target="#carousel" data-slide-to="{{ $index }}" class="{{ if (eq $index 0) }} active {{ end }}"></li>
+    {{ end }}
+  </ol>
+  <div class="carousel-inner">
+    {{ $bundle := .Site.GetPage "section" "media" }}
+    {{ range $index, $item := .Params.carousel }}
+      {{ $fileName := strings.TrimPrefix "/media/" $item.image }}
+      {{ $img := index ($bundle.Resources.Match $fileName) 0 }}
+      {{ $resizedImg := $img.Fill "1920x1080 Center q100" }}
+    <div class="carousel-item {{ if (eq $index 0) }} active {{ end }}">
+      <div class="item-{{ $index }}" style="background: url('{{ $resizedImg.RelPermalink }}') center no-repeat;"></div>
+      <!-- <img src="{{ $resizedImg.RelPermalink }}" alt="" class="d-block w-100 item-{{$index}}"> -->
+      {{ with $item.caption }}
+      <div class="carousel-caption d-flex align-items-center justify-content-center">
+        <p class="h1 m-0 text-shadow">{{ . }}</p>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

@@ -1,0 +1,59 @@
+.section-title {
+  // background: rgba($primary, .25);
+  color: $primary;
+  // padding: 0.5rem 1rem;
+  // display: inline-block;
+  border-radius: $border-radius;
+  font-weight: bold;
+}
+
+.badge {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.badge-primary {
+  background: rgba($primary, 0.1);
+  color: $primary;
+}
+
+.badge-light {
+  background: rgba($white, 0.1);
+  color: rgba($white, .7);
+}
+
+.badge-circle {
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+  font-size: 1.75rem;
+  position: relative;
+  display: block;
+  // line-height: 0.7;
+
+  i.material-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.badge-square {
+  border-radius: $border-radius;
+  padding: .6rem;
+
+  svg {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+}
+
+.hero {
+  position: relative;
+  height: 350px;
+  background-size: cover !important;
+  background-position: center center !important;
+}
