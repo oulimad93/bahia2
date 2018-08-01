@@ -4,6 +4,7 @@ phone_2: +213 549 73 04 34
 phone_3: +213 41 73 05 69
 address_1: 'Résidence les IRIS Plaza. Oran 31000, Algérie.'
 email_1: contact@bahiadisplay.com
+localisation: '35.731803, -0.582943'
 facebook: 'https://facebook.com'
 linkedin: 'https://linkedin.com'
 twitter: 'https://twitter.com'

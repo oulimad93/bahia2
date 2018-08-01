@@ -50,7 +50,7 @@
 
  // Carousel size for the carousel in the landing page
 .carousel-homepage .carousel-item > * {
-  height: 450px;
+  height: 550px;
   background-size: cover !important;
   background-repeat: no-repeat;
   background-position: center;
@@ -156,6 +156,31 @@ p.card-text {
   overflow: hidden;
   height: 110px;
 }
-.reference img {
-  mix-blend-mode:luminosity;
+.badge-facebook {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
+.badge-facebook[href]:hover, .badge-facebook[href]:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #4267B2;
+}
+.badge-linkedin {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.badge-linkedin[href]:hover, .badge-linkedin[href]:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #0077B5;
+}
+.badge-twitter {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.badge-twitter[href]:hover, .badge-twitter[href]:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #1DA1F2;
+}
+

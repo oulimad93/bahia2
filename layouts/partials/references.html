@@ -1,9 +1,9 @@
 {{ with .Site.GetPage "section" "references" }}
-<div class="pt-5 pb-7">
+<div class="pt-7 pb-7 bg-white">
   <section class="container text-center">
-    <h2 class="h2 mb-3">{{ .Params.heading }}</h2>
+    <h2 class="h2 mb-3 text-dark">{{ .Params.heading }}</h2>
     <div class="row">
-      <p class="col-md-6 text-secondary mx-auto mb-5">
+      <p class="col-md-6 text-dark mx-auto mb-5">
         {{ .Content | markdownify }}
       </p>
     </div>
@@ -19,7 +19,7 @@
       {{ end }}
     </div>
     <div class="text-center">
-        <a href="/references" class="btn btn-primary">Découvrez tous nos clients &rarr;</a>
+        <a href="/references" class="btn btn-secondary text-white">Découvrez tous nos clients &rarr;</a>
       </div>
   </section>
 </div>

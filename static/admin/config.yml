@@ -74,6 +74,7 @@ collections:
           - { label: "E-mail N°1", name: "email_1", widget: "string", required: false }
           - { label: "E-mail N°2", name: "email_2", widget: "string", required: false }
           - { label: "E-mail N°3", name: "email_3", widget: "string", required: false }
+          - { label: "Emplacement GPS du Siège Social", name: "localisation", widget: "string" }
           - { label: URL page Facebook, name: facebook, widget: "string", required: false }
           - { label: URL profile LinkedIn, name: linkedin, widget: "string", required: false }
           - { label: URL Twitter, name: twitter, widget: "string", required: false }

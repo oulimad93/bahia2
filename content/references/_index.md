@@ -8,17 +8,17 @@ refs:
     publish: true
   - image: /media/docker.png
     publish: true
-  - image: /media/spotify.png
+  - image: /media/netlify.png
     publish: true
   - image: /media/facebook.png
     publish: true
-  - image: /media/microsoft.png
+  - image: /media/microsoft.jpg
     publish: true
   - image: /media/samsung.png
     publish: true
   - image: /media/dell.png
     publish: true
-  - image: /media/lenovo.png
+  - image: /media/lenovo.jpg
     publish: true
 ---
 Nous travaillons avec plusieurs entreprises dispercés sur toute la surface du globe, ce qui fait de notre entreprise, un des leader du marché

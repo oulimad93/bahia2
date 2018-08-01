@@ -8,20 +8,25 @@
 <footer class="" id="contact">
   <div class="container">
     <div class="row justify-content-center py-5 border-bottom">
-      <div class="col-md-4 mb-4 mb-md-0">
-
-
-        </div>
       </div>
 
 
     <div class="row justify-content-between py-5 border-bottom">
       <div class="col-md-3 mb-md-0 text-center text-md-left">
         <img src="/img/logo_h_white.png" alt="" width="220" class="mb-5">
-        <p class="text-secondary text-sm">
+        <p class="text-secondary text-sm mb-5">
           &copy; 2018 {{ .Site.Title }}.
           <br> Tous droits réservés.
         </p>
+        <a href="{{ .Params.facebook }}" rel="noreferrer noopener" class="badge badge-facebook badge-square">
+          {{ partial "icons/facebook" . }}
+        </a>
+        <a href="{{ .Params.linkedin }}" rel="noreferrer noopener" class="badge badge-linkedin badge-square">
+          {{ partial "icons/linkedin" . }}
+        </a>
+        <a href="{{ .Params.twitter }}" rel="noreferrer noopener" class="badge badge-twitter badge-square">
+          {{ partial "icons/twitter" . }}
+        </a>
       </div>
       <div class="col-md-4 mb-4 mb-md-0 d-none d-md-block">
         <p class="text-white h5 mb-4">Coordonnees</p>
@@ -31,7 +36,7 @@
             <i class="material-icons">phone</i>
           </span>
           <div class="media-body">
-            <ul class="list-unstyled mb-0">
+            <ul class="list-unstyled mb-3">
               <li>
                 <a href="tel:{{ .Params.principal_phone }}">{{ .Params.principal_phone }}</a>
               </li>
@@ -54,7 +59,7 @@
             <i class="material-icons">email</i>
           </span>
           <div class="media-body">
-            <ul class="list-unstyled mb-0">
+            <ul class="list-unstyled mb-3">
               <li>
                 <a href="tel:{{ .Params.email_1 }}">{{ .Params.email_1 }}</a>
               </li>
@@ -94,17 +99,9 @@
         </div>
     {{ end }}
       </div>
-      <div class="col-md-3">
-        <p class="text-white h5 mb-4">Restez connectés</p>
-        <a href="{{ .Params.facebook }}" rel="noreferrer noopener" class="badge badge-light badge-square">
-          {{ partial "icons/facebook" . }}
-        </a>
-        <a href="{{ .Params.linkedin }}" rel="noreferrer noopener" class="badge badge-light badge-square">
-          {{ partial "icons/linkedin" . }}
-        </a>
-        <a href="{{ .Params.twitter }}" rel="noreferrer noopener" class="badge badge-light badge-square">
-          {{ partial "icons/twitter" . }}
-        </a>
+      <div class="col-md-4" id="google-map-area-main" style="height: 300px;">
+
+
       </div>
     </div>
     <small class="d-block p-3 m-0 text-center">

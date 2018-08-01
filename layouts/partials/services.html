@@ -1,21 +1,25 @@
 {{ with .Site.GetPage "section" "services" }}
-<div class="py-7" >
+<div class="py-7 bg-light" >
   <section class="container mb-3">
     <div class="row align-items-center">
       <div class="col-md-12">
-        <h1 class="h1 section-title mb-3 text-center">Nos services</h2>
+        <h1 class="h1 section-title mb-3 text-center text-dark mb-5">Nos services</h2>
         <!-- <p class="text-secondary intro-paragraph">Nos proposont une multitude de services à nos clients</p> -->
       </div>
-      <div class="col ">
-        <button class="btn btn-light shadow btn-arrow rounded-circle mr-2 text-left" style="margin-top: -130px;" id="project-prev">
+
+
+        <div class="col-md-12 text-center">
+        <button class="btn btn-dark shadow btn-arrow rounded-circle mr-2" style="" id="project-prev">
           <i class="material-icons">keyboard_arrow_left</i>
         </button>
 
-      </div>
-      <button class="btn btn-light shadow btn-arrow rounded-circle text-right" style="margin-top: -130px;z-index: 10:" id="project-next">
+
+      <button class="btn btn-dark shadow btn-arrow rounded-circle" style="" id="project-next">
           <i class="material-icons">keyboard_arrow_right</i>
         </button>
+        </div>
     </div>
+
   </section>
   <div class="container-fluid" id="projects-slider">
      {{ $bundle := .Site.GetPage "section" "media" }}
@@ -25,15 +29,15 @@
         {{ $resizedImg := $img.Fill "400x300 center q100"  }}
           <div class="px-4 py-5">
         <a href="/services#{{ .title }}">
-            <article class="card">
+            <article class="card shadow">
 
               <div class="card-img">
                 <img src="{{ $resizedImg.RelPermalink }}" alt="" class="card-img-top">
               </div>
               <div class="card-body p-4">
-                <h4 class="card-title text-primary text-uppercase">{{ .title }}</h4>
-                <p class="card-text text-secondary mb-3" >{{ .description }}</p>
-                <a href="/services#{{ .title }}" class="text-primary ">En savoir plus &raquo;</a>
+                <h4 class="card-title text-dark text-uppercase">{{ .title }}</h4>
+                <p class="card-text text-primary mb-3" >{{ .description }}</p>
+                <a href="/services#{{ .title }}" class="text-dark ">En savoir plus &raquo;</a>
               </div>
             </article>
         </a>
