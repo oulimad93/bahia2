@@ -12,14 +12,14 @@
       {{ range first 6 (where .Params.refs "publish" true) }}
         {{ $fileName := strings.TrimPrefix "/media/" .image }}
         {{ $img := index ($bundle.Resources.Match $fileName) 0 }}
-        {{ $resizedImg := $img.Fit "200x75" }}
-        <div class="col-6 px-3 mb-4 mb-md-0 col-md-2 reference">
+        {{ $resizedImg := $img.Fit "180x75" }}
+        <div class="col-6 px-4 mb-4 mb-md-0 col-md-2 reference">
           <img src="{{ $resizedImg.RelPermalink }}" class="img-fluid" alt="">
         </div>
       {{ end }}
     </div>
     <div class="text-center">
-        <a href="/references" class="btn btn-secondary text-white">Découvrez tous nos clients &rarr;</a>
+        <a href="/references" class="btn btn-danger text-white">Découvrez tous nos clients &rarr;</a>
       </div>
   </section>
 </div>

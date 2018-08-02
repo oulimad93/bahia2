@@ -19,7 +19,7 @@
         {{ $img := index ($bundle.Resources.Match $fileName) 0 }}
         {{ $resizedImg := $img.Fit "200x75" }}
         {{ if .publish }}
-        <div class="col-6 col-md-4 px-3 mb-5 mb-md-0 col-md-2 mb-md-5 reference">
+        <div class="col-6 col-md-3 px-3 mb-5 mb-md-0 col-md-2 mb-md-7 reference">
           <img src="{{ $resizedImg.RelPermalink }}" alt="" class="img-fluid">
         </div>
         {{ end }}
