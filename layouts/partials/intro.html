@@ -10,7 +10,7 @@
           {{ $bundle := .Site.GetPage "section" "media" }}
           {{ $fileName := strings.TrimPrefix "/media/" .Params.intro_image }}
           {{ $img := index ($bundle.Resources.Match $fileName) 0 }}
-          {{ $resizedImg := $img.Fill "600x400 center q100" }}
+          {{ $resizedImg := $img.Fill "600x400 center" }}
         <img src="{{ $resizedImg.RelPermalink }}" alt="" class="img-fluid shadow-lg">
       </div>
     </div>
