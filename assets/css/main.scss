@@ -183,4 +183,9 @@ p.card-text {
   text-decoration: none;
   background-color: #1DA1F2;
 }
+@media only screen and (max-width: 600px) {
+  .coordinates-section {
+    margin-top: 50px;
+  }
+}
 
