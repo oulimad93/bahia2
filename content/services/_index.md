@@ -7,7 +7,7 @@ services:
     image: /media/bank-phrom-352283-unsplash.jpg
   - title: Decoupe Forex
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eaque nulla provident nihil culpa, debitis magnam quisquam, dolor ipsum libero, explicabo fugit tenetur accusamus? Sapiente, voluptatum, blanditiis nesciunt libero magni quae debitis inventore tenetur rerum modi corporis laboriosam est. Tempore!
-    image: /media/forex.jpg
+    image: /media/forex-Recycle.jpg
   - title: Enseignes
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eaque nulla provident nihil culpa, debitis magnam quisquam, dolor ipsum libero, explicabo fugit tenetur accusamus? Sapiente, voluptatum, blanditiis nesciunt libero magni quae debitis inventore tenetur rerum modi corporis laboriosam est. Tempore!
     image: /media/pawel-czerwinski-710838-unsplash.jpg
