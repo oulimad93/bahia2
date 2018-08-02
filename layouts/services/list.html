@@ -23,7 +23,7 @@
       <div class="col-md-6 {{ if not (mod $index 2) }} text-left {{ else }} text-right {{ end }}">
           {{ $fileName := strings.TrimPrefix "/media/" $feature.image }}
           {{ $img := index ($bundle.Resources.Match $fileName) 0 }}
-          {{ $resizedImg := $img.Fill "600x350 center q100" }}
+          {{ $resizedImg := $img.Fill "600x350 center" }}
         <img src="{{ $resizedImg.RelPermalink }}" alt="" class="img-fluid shadow">
       </div>
     </div>
