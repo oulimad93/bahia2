@@ -9,7 +9,7 @@
     {{ range $index, $item := .Params.carousel }}
       {{ $fileName := strings.TrimPrefix "/media/" $item.image }}
       {{ $img := index ($bundle.Resources.Match $fileName) 0 }}
-      {{ $resizedImg := $img.Fill "1920x1080 Center q100" }}
+      {{ $resizedImg := $img.Fill "1920x550 Center q75" }}
     <div class="carousel-item {{ if (eq $index 0) }} active {{ end }}">
       <div class="item-{{ $index }}" style="background: url('{{ $resizedImg.RelPermalink }}') center no-repeat;"></div>
       <!-- <img src="{{ $resizedImg.RelPermalink }}" alt="" class="d-block w-100 item-{{$index}}"> -->
