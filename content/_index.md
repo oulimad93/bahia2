@@ -5,7 +5,7 @@ carousel:
   - caption: 'Pour une garantie de qualité et de professionnalisme '
     image: /media/markus-spiske-445251-unsplash.jpg
   - image: /media/pexels-photo-259714.jpeg
-intro_image: /media/aaa.png
+intro_image: /media/aa.png
 presentation: >-
   LBahia display est une agence de communication domiciliée à Oran, proposant
   plusieurs services à ses clients allant de l'impression numerique à
