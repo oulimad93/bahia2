@@ -1,6 +1,5 @@
 ---
-title: Nos références - GRP PLATINIUM
-heading: 'Nos Références'
+heading: Nos Références
 refs:
   - image: /media/google.png
     publish: true
@@ -20,5 +19,6 @@ refs:
     publish: true
   - image: /media/lenovo.jpg
     publish: true
+  - image: /media/dell.png
 ---
 Nous travaillons avec plusieurs entreprises dispercés sur toute la surface du globe, ce qui fait de notre entreprise, un des leader du marché
