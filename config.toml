@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "http://bahiadisplay.com/"
 languageCode = "fr-FR"
 title = "Bahia Display - Agence de communication"
 disableKinds = ["taxonomyTerm"]

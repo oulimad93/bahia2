@@ -1,4 +1,4 @@
-display_url: ""
+display_url: "http://bahiadisplay.com/"
 
 backend:
   name: git-gateway
@@ -54,7 +54,7 @@ collections:
             singular_label: Service
             widget: list
             fields:
-              - { label: "Titre", name: "title", widget: "image" }
+              - { label: "Titre", name: "title", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Image", name: "image", widget: "image" }
 
