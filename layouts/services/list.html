@@ -16,14 +16,17 @@
       {{ range $index, $feature := .Params.services }}
       <div class="row py-5 mb-3">
 
-      <div class="col-md-6 mb-4 {{ if not (mod $index 2) }} order-md-1 pl-5 pr-0 {{ else }} - {{ end }}">
+      <div class="col-md-6 mb-4 {{ if not (mod $index 2) }} order-md-1 pl-5 pr-0 {{ else }} - {{ end }}" id="{{ $feature.title }}">
         <h2 class=" mt-4 mb-5 text-dark">{{ $feature.title }}</h2>
-        <div class="text-primary mb-3 w-90" >{{ $feature.description }}</div>
+        <div class="text-primary mb-4 w-90" >{{ $feature.description }}</div>
+          {{ if $feature.link }}
+          <a href="{{ $feature.link }}" target="_blank" class="text-dark font-weight-bold">Télécharger Catalogue &nbsp;&nbsp;<img src="/img/download.svg" title="Telecharger catalogue" alt="Telecharger catalogue" width="18"></a>
+          {{ end }}
       </div>
       <div class="col-md-6 {{ if not (mod $index 2) }} text-left {{ else }} text-right {{ end }}">
           {{ $fileName := strings.TrimPrefix "/media/" $feature.image }}
           {{ $img := index ($bundle.Resources.Match $fileName) 0 }}
-          {{ $resizedImg := $img.Fill "600x350 center" }}
+          {{ $resizedImg := $img.Fill "600x390 center" }}
         <img src="{{ $resizedImg.RelPermalink }}" alt="" class="img-fluid shadow">
       </div>
     </div>

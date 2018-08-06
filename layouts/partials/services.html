@@ -3,7 +3,7 @@
   <section class="container mb-3">
     <div class="row align-items-center">
       <div class="col-md-12">
-        <h1 class="h1 section-title mb-3 text-center text-dark mb-5">Nos services</h2>
+        <h1 class="h1 section-title mb-3 text-center text-dark mb-5">Produits et Services</h2>
         <!-- <p class="text-secondary intro-paragraph">Nos proposont une multitude de services à nos clients</p> -->
       </div>
 
@@ -38,6 +38,9 @@
                 <h4 class="card-title text-dark text-uppercase">{{ .title }}</h4>
                 <p class="card-text text-primary mb-3" >{{ .description }}</p>
                 <a href="/services#{{ .title }}" class="text-dark ">En savoir plus &raquo;</a>
+                {{ if .link }}
+                <a href="{{ .link }}" target="_blank" class="text-dark float-right"><img src="/img/download.svg" title="Telecharger catalogue" alt="Telecharger catalogue" width="20"></a>
+                {{ end }}
               </div>
             </article>
         </a>
