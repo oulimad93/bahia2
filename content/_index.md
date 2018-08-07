@@ -4,7 +4,7 @@ carousel:
     image: /media/bank-phrom-352283-unsplash.jpg
   - caption: 'Pour une garantie de qualité et de professionnalisme '
     image: /media/markus-spiske-445251-unsplash.jpg
-  - image: /media/pexels-photo-259714.jpeg
+  - image: /media/0066-stand-loire-bretagne-e696126.jpg
 intro_image: /media/aaa.png
 presentation: >-
   LBahia display est une agence de communication domiciliée à Oran, proposant
