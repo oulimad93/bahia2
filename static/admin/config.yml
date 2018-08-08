@@ -40,6 +40,12 @@ collections:
             fields:
               - { label: "Logo", name: image, widget: image }
               - { label: "Afficher", name: publish, widget: boolean }
+          - label: "Galerie d'images"
+            name: gallery
+            singular_label: Image
+            widget: list
+            fields:
+              - { label: "Image", name: image, widget: image }
 
       - file: "content/services/_index.md"
         label: "Services"
