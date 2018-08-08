@@ -41,8 +41,10 @@
  @import "node_modules/bootstrap/scss/utilities";
  @import "node_modules/bootstrap/scss/print";
 
-  @import "node_modules/slick-carousel/slick/slick.scss";
+ @import "node_modules/slick-carousel/slick/slick.scss";
 //  @import "node_modules/slick-carousel/slick/slick-theme.scss";
+
+ @import "node_modules/lightgallery/scr/sass/lightgallery.scss";
 
 @import "sections";
 @import "text-colors";

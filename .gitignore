@@ -2,5 +2,7 @@ node_modules/
 dist/
 public/
 .cache/
+static/css/app.js
+static/js/main.css
 resources/
 *.log
